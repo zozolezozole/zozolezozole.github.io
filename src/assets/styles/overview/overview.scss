@@ -1,0 +1,25 @@
+.nhs-overview-container {
+    // min-height: 100vh;
+    padding: 10px;
+}
+
+.nhs-overview {
+    // min-height: calc(100vh - 20px);
+    // max-height: 800px;
+    background-color: white;
+    align-items: flex-start;
+    display: flex;
+}
+
+.nhs-overview-row {
+    width: 100%;
+}
+
+.nhs-overview-card-container {
+    // height: calc(100%/3);
+    // max-height: 250px !important;
+}
+
+.nhs-overview-card {
+    height: 100%;
+}

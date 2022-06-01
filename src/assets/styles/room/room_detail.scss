@@ -1,0 +1,95 @@
+.nhs-room-detail {
+    margin: 10px;
+}
+
+.nhs-alert {
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+    border: 1px solid lightgray;
+    height: calc(100% - 10px);
+    .title { 
+        text-align: center;
+        padding-top: 10px;
+    }
+    .item {
+        justify-content: flex-start;
+        align-items: center;
+        display: flex;
+        padding: 10px;
+        .icon {
+            margin: 0px 20px 0px 10px;
+            i {
+                
+            }
+            .fa-skull-crossbones {
+                color: white;
+                padding: 10px;
+                border-radius: 100%;
+                background-color: $error;
+                font-size: 15px;
+            }
+            .fa-triangle-exclamation {
+                color: $warning;
+                font-size: 30px;
+            }
+        }
+        .desc {
+            font-size: 15px;
+            color: $fontColorDark;
+        }
+    }
+}
+
+.nhs-last-reading {
+    overflow-x: scroll;
+    width: 100%;
+    display: flex;
+    height: 10.5em;
+    position:relative;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.nhs-last-reading::-webkit-scrollbar {
+    width: 0px !important;
+    height: 2px !important;
+}
+  
+.nhs-last-reading::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px transparent !important;
+    border-radius: 2px !important;
+}
+  
+.nhs-last-reading::-webkit-scrollbar-thumb {
+    border-radius: 1px !important;
+    background-color: #bcccdc !important;
+    outline: 1px solid #bcccdc !important;
+}
+
+.nhs-room-detail-chart {
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    .between-date {
+        justify-content: flex-end;
+        align-items: baseline;
+        display: flex;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        .name {
+            font-size: 12px;
+            color: $fontColorDark;
+        }
+        .value {
+            font-weight: 600;
+            padding-left: 10px;
+            font-size: 12px;
+            color: $fontColorDark;
+        }
+    }
+}

@@ -1,0 +1,89 @@
+.nhs-side-menu {
+    background-color: $primaryColor;
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.nhs-logo {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    img {
+        width: 80%;
+        object-fit: contain;
+    }
+}
+
+.nhs-overview-image {
+    width: 100%;
+    position: relative;
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .desc {
+        position: absolute;
+        bottom: 20px;
+        font-size: 15px;
+        background-color: $fontColor;
+        color: white;
+        padding: 0px 10px;
+    }
+}
+
+.nhs-menu-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .item {
+        text-align: center;
+        padding: 15px 0px;
+        width: 30%;
+        border: 0.5px solid $primaryDisabledColor;
+        cursor: pointer;
+        i {
+            font-size: 20px;
+            color: $primaryDisabledColor;
+        }
+        p {
+            font-size: 10px;
+            margin-bottom: 0px;
+            color: $primaryDisabledColor;
+        }
+    }
+    .item:hover {
+        i {
+            color: white;
+        }
+        p {
+            color: white;
+        }
+    }
+    .item-active {
+        i {
+            color: white;
+        }
+        p {
+            color: white;
+        }
+    }
+}
+
+.nhs-rooms {
+    width: 100%;
+    flex: 1;
+}
+
+.nhs-side-menu-footer {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

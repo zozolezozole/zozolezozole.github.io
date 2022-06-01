@@ -1,0 +1,79 @@
+// main scss
+@import './variables.scss';
+
+// component scss
+@import './common/index.scss';
+@import './overview/index.scss';
+@import './room/index.scss';
+@import './side_menu.scss';
+@import './circle.scss';
+@import './weather.scss';
+
+
+@font-face {
+    font-family: 'Rubik';
+    src: local('Rubik'), url(./../fonts/Rubik-Regular.ttf) format('ttf');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+    'embedded-opentype', and 'svg' */
+}
+
+body {
+    background-color: $backgroundColor !important;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.body::-webkit-scrollbar {
+    width: 2px !important;
+}
+  
+.body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px transparent !important;
+    border-radius: 2px !important;
+}
+  
+.body::-webkit-scrollbar-thumb {
+    border-radius: 1px !important;
+    background-color: #bcccdc !important;
+    outline: 1px solid #bcccdc !important;
+}
+
+.MuiButtonBase-root {
+    outline: none !important;
+    width: 50%;
+}
+
+.MuiToggleButtonGroup-root .Mui-selected {
+    background-color: lighten($color: $secondaryColor, $amount: 10) !important;
+}
+
+.fa-temperature-half {
+    color: $temp
+}
+
+.fa-droplet {
+    color: $humidity
+}
+
+.fa-cloud-sun {
+    color: $light;
+}
+
+.fa-wind {
+    color: $pm2;
+}
+
+.fa-circle-dot {
+    color: $primaryColor;
+}
+
+.fa-fan {
+    color: $success;
+}
+
+.fa-gauge {
+    color: darken($color: $error, $amount: 5);
+}
+
+.fa-atom {
+    color: $success;
+}

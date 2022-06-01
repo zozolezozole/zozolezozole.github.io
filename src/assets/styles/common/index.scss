@@ -1,0 +1,203 @@
+@import './loader.scss';
+
+.nhs-room-item {
+    background-color: white;
+    border-bottom: 1px solid $primaryColor;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    p {
+        margin-bottom: 0px;
+        color: $fontColor;
+        font-size: 15px;
+    }
+    i {
+        color: $primaryColor;
+        font-size: 15px;
+    }
+}
+
+.nhs-room-item-active {
+    border-left: 3px solid $success;
+    p {
+        // opacity: 70%;
+        color: $success;
+    }
+    i {
+        // opacity: 70%;
+        color: $success;
+    }
+}
+
+.nhs-room-item:hover {
+    border-left: 3px solid $success;
+    p {
+        // opacity: 70%;
+        color: $success;
+    }
+    i {
+        // opacity: 70%;
+        color: $success;
+    }
+    transition: all ease-in-out 0.3s;
+    transform: translateX(5%);
+}
+
+.nhs-stars {
+    text-align: center;
+}
+
+.nhs-overall {
+    background-color: white;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid lightgray;
+    .nhs-overall-info {
+        padding-bottom: 10px;
+        .nhs-overall-info-header {
+            text-align: center;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        .nhs-overall-info-body {
+            margin: 0px 30px;
+        }
+        .nhs-overall-info-item {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            padding-bottom: 30px;
+            .icon {
+                min-width: 40px;
+                text-align: center;
+            }
+            i {
+                font-size: 30px;
+            }
+            .desc {
+                min-width: 100px;
+                text-align: center;
+                .count {
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 1.5;
+                    span {
+                        font-size: 15px;
+                        font-weight: 100;
+                    }
+                }
+                .title {
+                    font-size: 12px;
+                    line-height: 1;
+                }
+                .nhs-stars {
+                    line-height: 0.7;
+                }
+            }
+        }
+        .nhs-overall-info-item-pm {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            padding-bottom: 30px;
+            .icon {
+                min-width: 20px;
+                text-align: center;
+            }
+            i {
+                font-size: 20px;
+            }
+            .desc {
+                min-width: 100px;
+                text-align: center;
+                .count {
+                    font-size: 15px;
+                    font-weight: 500;
+                    line-height: 1.5;
+                    span {
+                        font-size: 12px;
+                        font-weight: 100;
+                    }
+                }
+                .title {
+                    font-size: 10px;
+                    line-height: 1;
+                }
+                .nhs-stars {
+                    line-height: 0.7;
+                }
+            }
+        }
+    }
+}
+
+.nhs-overall-info-updated-date {
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    padding-right: 20px;
+    .name {
+        font-size: 12px;
+        color: $fontColorDark;
+    }
+    .value {
+        font-weight: 600;
+        padding-left: 10px;
+        font-size: 12px;
+        color: $fontColorDark;
+    }
+}
+
+.nhs-overall-rate {
+    // background-color: $success;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    .title {
+        padding-top: 15px;
+        font-size: 12px;
+        color: white;
+    }
+    .star {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 15px;
+        .desc {
+            font-size: 60px;
+            font-weight: bold;
+            color: white;
+        }
+        .rate {
+            color: $primaryDark;
+            font-weight: bold;
+        }
+    }
+}
+
+.nhs-overall-rate-good {
+    background-color: $success;
+}
+
+.nhs-overall-rate-medium {
+    background-color: $warning;
+    .star {
+        .desc {
+            font-size: 40px;
+        }
+    }
+}
+
+.nhs-overall-rate-bad {
+    background-color: $error;
+}
